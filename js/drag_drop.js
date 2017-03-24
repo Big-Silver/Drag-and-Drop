@@ -37,8 +37,6 @@ $(document).ready(function(){
 	});
 	item.resizable();
 	item.addClass('remove');
-	// var el = $("&lt;span&gt;&lt;a href='Javascript:void(0)' class="xicon delete" title="Remove"&gt;X&lt;/a&gt;&lt;/span&gt;");
-	// $(el).insertAfter($(item.find('p')));
 	var ex = $('<a href="Javascript:void(0)" class="delete" title="Remove">X</a>').css({
 	'position': 'absolute',
 	'bottom': 110,
@@ -78,15 +76,15 @@ $(document).ready(function(){
 });
 function applyRotation() {
   $('.handler').draggable({
-      opacity: 0.01,
-      helper: 'clone',
-      drag: function (event, ui) {
-          var rotateCSS = 'rotate(' + ui.position.left + 'deg)';
+    opacity: 0.01,
+    helper: 'clone',
+    drag: function (event, ui) {
+      var rotateCSS = 'rotate(' + ui.position.left + 'deg)';
 
-          $(this).parent().css({
-              '-moz-transform': rotateCSS,
-                  '-webkit-transform': rotateCSS
-          });
-      }
+      $(this).parent().css({
+        '-moz-transform': rotateCSS,
+        '-webkit-transform': rotateCSS
+      });
+    }
   });
 }
