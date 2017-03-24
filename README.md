@@ -6,7 +6,7 @@
 Using Jquery, Html, CSS and Javascript, implement the D & D(drag and drop), clone, resize, rotate and remove.
 This Jquery Drag and Drop example is written by [Big Silver].
 
-##Quick Start
+## Quick Start
 
 For begin, clone this project and run the following commands in your terminal:
 
